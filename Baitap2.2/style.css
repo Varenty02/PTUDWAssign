@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header, nav, main, footer {
+    display: block;
+}
+header, nav, section, article, aside, footer {
+    position: relative;
+}
+section, article, aside {
+    float: left;
+    width: 33.33%;
+}
+.left-column {
+    padding-right: 20px;
+}
+.right-column {
+    padding-left: 20px;
+}
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    overflow: hidden;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #111;
+}
+footer {
+    clear: both;
+    padding: 20px;
+    text-align: center;
+    background-color: #eee;
+}

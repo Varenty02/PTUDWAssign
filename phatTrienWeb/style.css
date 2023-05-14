@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: purple;
+}
+ul{
+    display: flex;
+    justify-content: center;
+}
+ul li{
+    list-style: none;
+    margin: 20px;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+.container p{
+    color: red;
+}
+
+.container .block{
+    margin: 20px;
+    border: 5px solid aqua;
+    padding: 10px;
+    background-color: transparent;
+    position: relative;
+
+}
+.container{
+    height: 200px;
+    background-image: url('./2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-image: no-repeat;
+}
+.btn-add{
+    margin:20px;
+    border: 5px solid red;
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 5px;
+    position: absolute;
+    top:30%;
+    left: 10%;
+}
+.btn-add:hover{
+    border: 5px solid black;
+    transition: 0.5s;
+}

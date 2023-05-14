@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+    <title>Universe</title>
+</head>
+<body>
+	ax^2+bx+c=0
+    <form>
+		<div>a=<input class="index" type="text"></div>
+		<div>b=<input class="index" type="text"></div>
+		<div>c=<input class="index" type="text"></div>
+		<button onclick="counting()" type="button">Tính</button>
+	</form>
+	<div id="result">
+		
+	</div>
+	<script>
+		let x1,x2
+		let index=document.getElementsByClassName("index");
+		function counting(){
+			let a=index[0].value,b=index[1].value,c=index[2].value;
+			let delta=Math.pow(b,2)-4*a*c;
+			if(delta>0){
+				x1=(-Math.sqrt(delta)-b)/(2*a);
+				x2=(Math.sqrt(delta)-b)/(2*a);
+				let result=document.getElementById("result");
+				result.innerHTML=`x1=${x1} x2=${x2}`
+			}else if(delta==0) {
+				x1=-b/(2*a);
+				x2=-b/(2*a);
+				let result=document.getElementById("result");
+				result.innerHTML=`x1=x2=${x1}`
+			}else{
+				
+				result.innerHTML=""
+				alert("Vô nghiệm");
+			}
+			
+		}
+		
+	</script>
+</body>
+</html>
